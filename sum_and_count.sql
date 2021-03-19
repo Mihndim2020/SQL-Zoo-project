@@ -27,17 +27,12 @@ FROM world
 GROUP BY continent;
 
 -- 7
-SELECT continent COUNT(name)
-FROM world
-HAVING population >= 10000000;
-
--- 8
 SELECT continent, COUNT(name)
 FROM world
 WHERE population >= 10000000
 GROUP BY continent;
 
--- 9
+-- 8
 SELECT continent
 FROM world
 GROUP BY continent
